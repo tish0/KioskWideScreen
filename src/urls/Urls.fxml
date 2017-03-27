@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--   @author    	Tihomir Penev -->
+<!--   @version   	1.0.0 February 23, 2017 -->
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="urls.UrlsController">
+   <children>
+      <BorderPane layoutX="104.0" layoutY="126.0" prefHeight="505.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="CENTER" prefHeight="405.0" prefWidth="180.0" style="-fx-background-color: #1B3A1B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="wb1" mnemonicParsing="false" prefWidth="170.0" stylesheets="@application.css" text="Algonquin College">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="wb2" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" stylesheets="@application.css" text="Programs">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="wb3" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" stylesheets="@application.css" text="News">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="wb4" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" stylesheets="@application.css" text="About">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="wb5" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" stylesheets="@application.css" text="Careers">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="wb6" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" stylesheets="@application.css" text="Future Studens">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </VBox>
+         </left>
+         <bottom>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="85.0" prefWidth="501.0" style="-fx-background-color: #1B3A1B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" stylesheets="@application.css" text="Back">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="mainMenu" mnemonicParsing="false" onAction="#OpenMainMenu" prefHeight="25.0" prefWidth="120.0" stylesheets="@application.css" text="Main Menu">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="forwardButton" mnemonicParsing="false" stylesheets="@application.css" text="Forward">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </bottom>
+         <center>
+            <WebView id="web" fx:id="web" prefHeight="200.0" prefWidth="200.0" stylesheets="@application.css" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <HBox prefHeight="48.0" prefWidth="501.0" style="-fx-background-color: #1B3A1B;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="278.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
